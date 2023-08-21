@@ -1,0 +1,25 @@
+record(ai, "$(P)A"){
+	field(DTYP, "pydev")
+	field(SCAN, "I/O Intr")
+	field(INP, "@pydev.iointr('$(P)A')")
+}
+record(ai, "$(P)B"){
+	field(DTYP, "pydev")
+	field(SCAN, "I/O Intr")
+	field(INP, "@pydev.iointr('$(P)B')")
+}
+record(ai, "$(P)C"){
+	field(DTYP, "pydev")
+	field(SCAN, "I/O Intr")
+	field(INP, "@pydev.iointr('$(P)C')")
+}
+record(ai, "$(P)D"){
+	field(DTYP, "pydev")
+	field(SCAN, "I/O Intr")
+	field(INP, "@pydev.iointr('$(P)D')")
+}
+record(ao, "$(P)Trigger"){
+	field(SCAN, "1 second")
+	field(DTYP, "pydev")
+	field(OUT, "@bug_test.trigger('$(P)')")
+}
