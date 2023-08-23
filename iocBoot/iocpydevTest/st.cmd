@@ -23,5 +23,6 @@ iocInit
 #seq sncxxx,"user=q8i"
 
 pydev("import sys")
-pydev("sys.path.append('/SNS/users/q8i/iocs/pydev_test')")
+#pydev("sys.path.append('/SNS/users/q8i/iocs/pydev_test')")
+pydev("sys.path.append('/home/q8i/iocs/pydev_test2/pydev_test')")
 pydev("import bug_test")

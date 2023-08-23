@@ -29,8 +29,13 @@
 #SNCSEQ = $(MODULES)/seq-ver
 
 # EPICS_BASE should appear last so earlier modules can override stuff:
-EPICS_BASE = /home/controls/common/base/main
-PYDEVICE=/home/controls/common/pydevice/main
+#EPICS_BASE = /home/controls/common/base/main
+#PYDEVICE=/home/controls/common/pydevice/main
+EPICS_BASE = /home/q8i/epics/base-R7.0.6.1
+#PYDEVICE=/home/controls/common/pydevice/main
+#PYDEVICE=/home/controls/common/pydevice/delay_after_cb_request
+PYDEVICE=/home/q8i/repos/PyDevice
+
 
 # Set RULES here if you want to use build rules from somewhere
 # other than EPICS_BASE:

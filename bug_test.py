@@ -5,17 +5,18 @@ def prime_list(n):
 		return [2]
 	if n==2:
 		return [2, 3]
-	L = prime_list(n-1)
+	L = [2, 3]
 	p = L[-1] + 2
-	while True:
+	while len(L)<n:
 		is_prime = True
 		for f in L:
 			if p%f==0:
 				is_prime = False
 				break
 		if is_prime:
-			return L + [p]
+			L.append(p)
 		p+=2
+	return L
 	
 
 count = 5
@@ -23,7 +24,7 @@ def trigger(p):
 	#time.sleep(5)
 	global count
 	print("here "+p+"A")
-	prime_list(10)
+	print(prime_list(1800)[-1])
 	pydev.iointr(p+"A", count)
 	pydev.iointr(p+"B", count)
 	pydev.iointr(p+"C", count)
@@ -32,4 +33,4 @@ def trigger(p):
 	#count += 1
 
 if __name__=="__main__":
-	print(prime_list(5))
+	print(prime_list(18000)[-1])
